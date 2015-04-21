@@ -1,0 +1,22 @@
+{
+
+  "name": "emoji finder chrome extension tool",
+  "version": "0.1.0",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "clipboardWrite",
+    "clipboardRead"
+  ],
+  "icons": { "128": "resources/img/hubot.png" },
+
+  // https://developer.chrome.com/extensions/manifest/web_accessible_resources
+  "browser_action": {
+    "default_title": "emoji",
+    "default_icon": "resources/img/hubot.png",
+    "default_popup": "pages/popup.html"
+  },
+
+  "manifest_version": 2
+}
