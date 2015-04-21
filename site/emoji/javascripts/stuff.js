@@ -41,6 +41,11 @@ $.getJSON('emojis.json', function(emojis) {
 
 $(document).on('click', '[data-clipboard-text]', function() {
 
+  if ($(this).attr('class').indexOf('js-clear-search') > -1){
+    $(".input-search").value('');
+    return false;
+  }
+
   var text = $(this).attr('data-clipboard-text');
 
   clipBoardCopy(text);
@@ -48,6 +53,7 @@ $(document).on('click', '[data-clipboard-text]', function() {
   $("<div class=alert></div>").text("Copied " + text).appendTo("body").fadeIn().delay(1000).fadeOut();
 
 });
+
 
 function clipBoardCopy(text){
 
