@@ -1,3 +1,5 @@
 # chrome-emoji-finder
-emoji-finder chrome extension
+
+chrome extension 테스트겸 만들어본 emoji-finder chrome extension
+
 
